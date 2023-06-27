@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #89CFF0; /* Babyblauer Hintergrund */
+    color: #333; /* Textfarbe, hier schwarz */
+}
+
+.navbar {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    margin-left: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+#news {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 70px; /* Um Platz für die fixierte Navigationsleiste zu lassen */
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.12), 0px 1px 2px rgba(0,0,0,0.24);
+    max-width: 300px;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    min-width: 300px;
+    max-width: 100%;
+}
+
+.card:hover {
+    box-shadow: 0px 7px 14px rgba(0,0,0,0.25), 0px 5px 5px rgba(0,0,0,0.22);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.card a {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #428bca;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.card a:hover {
+    color: #315a86;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        display: inline;
+        margin: 0 5px;
+    }
+
+    #news {
+        flex-direction: column !important;
+    }
+
+   

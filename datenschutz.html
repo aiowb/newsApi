@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Datenschutz - NEWS by Ahmad</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+           <img src="logo.png" class="logo" alt="Logo">
+           <div class="dropdown" id="dropdownMenu">
+               <span onclick="toggleMenu()">
+         <i class="fas fa-bars"></i>
+       </span>
+              <div class="dropdown-content" id="dropdownContent">
+           <span class="close" onclick="toggleMenu()">X</span>
+           <a href="index.html" style="color: #fff;" onclick="toggleMenu()">Start</a><br/>
+           <a href="about.html" style="color: #fff;" onclick="toggleMenu()">Über uns</a><br/>
+           <a href="kontakt.html" style="color: #fff;" onclick="toggleMenu()">Kontakt</a><br/>
+       </div>
+       </div>
+       </div>
+       </header>
+    <main>
+        <h2>Datenschutz</h2>
+        <p>Hier können Sie Ihre Datenschutz details angeben.</p>
+        <button onclick="window.location.href='index.html'">Zurück zur Startseite</button>
+    </main>
+    <footer class="mt-4 footer">
+        <nav class="footer-nav">
+            <a class="nav-item nav-link" href="datenschutz.html">Datenschutz</a>
+            <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+            <a class="nav-item nav-link" href="copyright.html">Copyright</a>
+        </nav>
+          <!-- Fußzeile des Dokuments -->
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- Definiert den Dokumenttyp als HTML -->
+<html lang="de"> <!-- Beginn des HTML-Dokuments, Sprache auf Deutsch festgelegt -->
+
+<head> <!-- Kopfbereich des Dokuments, enthält Meta-Informationen und Links zu CSS/JS -->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Verbindung zu Ihrer CSS-Datei -->
+    <meta charset="UTF-8"> <!-- Definiert die Zeichencodierung für das Dokument -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Stellt sicher, dass Ihre Seite auf unterschiedlichen Geräten gut aussieht -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!-- Verbindung zur Bootstrap CSS-Bibliothek -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> <!-- Verbindung zur Font Awesome-Bibliothek, die Symbole und Icons bereitstellt -->
+    <title>NEWS by Ahmad</title> <!-- Setzt den Titel des Dokuments, der in der Registerkarte des Browsers angezeigt wird -->
+</head>
+<body> <!-- Hauptinhalt des Dokuments -->
+    <!-- Kopfbereich mit Navbar und Dropdown-Menü -->
+  <header>
+ <div class="navbar">
+    <img src="logo.png" class="logo" alt="Logo">
+    <div class="dropdown" id="dropdownMenu">
+        <span onclick="toggleMenu()">
+  <i class="fas fa-bars"></i>
+</span>
+       <div class="dropdown-content" id="dropdownContent">
+    <span class="close" onclick="toggleMenu()">X</span>
+    <a href="index.html" style="color: #fff;" onclick="toggleMenu()">Start</a><br/>
+    <a href="#featured" style="color: #fff;" onclick="toggleMenu()">Featured Artikel</a><br/>
+    <a href="#categories" style="color: #fff;" onclick="toggleMenu()">Kategorien</a><br/>
+    <a href="#new_news" style="color: #fff;" onclick="toggleMenu()">Neueste Nachrichten</a><br/>
+    <a href="about.html" style="color: #fff;" onclick="toggleMenu()">Über uns</a><br/>
+    <a href="kontakt.html" style="color: #fff;" onclick="toggleMenu()">Kontakt</a><br/>
+</div>
+</div>
+</div>
+</header>
+  <!-- Hauptinhalt des Dokuments -->
+    <main id="news">
+        <section id="featured">
+            <h3>Featured Artikel</h3>
+            <div id="featured-articles"></div>
+        </section>
+        <section id="categories">
+            <h3>Kategorien</h3>
+            <div id="category-articles"></div>
+        </section>
+        <section id="new_news">
+            <h3>Neueste Nachrichten</h3>
+            <div id="latest-articles"></div>
+        </section>
+    </main>
+    <footer class="mt-4 footer">
+    <nav class="footer-nav">
+        <a class="nav-item nav-link" href="datenschutz.html">Datenschutz</a>
+        <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+        <a class="nav-item nav-link" href="copyright.html">Copyright</a>
+    </nav>
+      <!-- Fußzeile des Dokuments -->
+</footer>
+<script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html> <!-- Ende des HTML-Dokuments -->
